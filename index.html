@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | PuzzleCoin</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="shared/styles.css">
+
+</head>
+<body>
+    <!-- unity container -->
+    <div id="unity-container">
+        <!-- <canvas id="unity-canvas" width=1080 height=1920 tabindex="-1"></canvas> -->
+        <canvas id="unity-canvas" tabindex="-1"></canvas>
+        <div id="unity-loading-bar">
+            <div id="unity-logo"></div>
+            <div id="unity-progress-bar-empty">
+                <div id="unity-progress-bar-full"></div>
+            </div>
+        </div>
+        <div id="unity-warning"> </div>
+    </div>
+
+    <!-- Login Page Container -->
+    <div id="login-page-container" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);">
+        <iframe id="login-iframe" src="" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+    </div>
+
+    <script src="Build/dcc6c041abf02de3f4a97fad5698b6ee.loader.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

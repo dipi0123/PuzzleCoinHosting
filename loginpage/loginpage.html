@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginpage.css">
+    <link rel="stylesheet" href="../shared/styles.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="loginpage.js" defer></script>
+</head>
+<body>
+    <div id="login-page" class="login-container">
+        <!-- 로고 -->
+        <div class="login-header">
+            <img src="../TemplateData/favicon.ico" alt="App Logo" class="app-logo">
+            <h2>Welcome to PuzzleCoin</h2>
+            <p class="login-description">Sign in to access your account and explore amazing features!</p>
+        </div>
+
+        <!-- Telegram Login -->
+        <div id="telegram-login" class="login-button-container">
+            <script async src="https://telegram.org/js/telegram-widget.js?22"
+                    data-telegram-login="TestLogin3838Bot"
+                    data-size="medium"
+                    data-onauth="onTelegramAuth(user)"
+                    data-request-access="write"></script>
+        </div>
+
+        <!-- Google Login -->
+        <!--
+        <div id="google-login-container" class="login-button-container">
+            <div id="g_id_onload"
+                 data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                 data-callback="onGoogleSignIn">
+            </div>
+            <div class="g_id_signin"
+                 data-type="standard"
+                 data-shape="rectangular"
+                 data-theme="outline"
+                 data-text="signin_with"
+                 data-size="large"
+                 data-logo_alignment="left">
+            </div>
+        </div>
+        -->
+
+    </div>
+    </body>
+    </html>
